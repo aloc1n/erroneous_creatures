@@ -2,6 +2,7 @@ gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/wizard'
+require 'pry'
 
 class WizardTest < Minitest::Test
   def test_has_name
