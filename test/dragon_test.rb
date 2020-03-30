@@ -1,9 +1,16 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require'./lib/dragon'
+require './lib/dragon'
+require 'pry'
 
 class DragonTest < Minitest::Test
+
+  def test_it_exists
+    dragon = Dragon.new("Ramoth", :gold, "Lessa")
+    assert_instance_of Dragon, dragon
+  end
+
   def test_it_has_a_name
     dragon = Dragon.new("Ramoth", :gold, "Lessa")
     assert_equal "Ramoth", dragon.name
@@ -50,7 +57,7 @@ class DragonTest < Minitest::Test
     refute dragon.hungry?
   end
 
-  def test_dragon_can_breath_fire
+  def test_dragon_can_breathe_fire
     dragon = Dragon.new("Canth", :brown, "F'nor")
     dragon.eat
     dragon.eat
@@ -73,6 +80,5 @@ class DragonTest < Minitest::Test
     assert dragon.hungry?
     assert_equal false, dragon.breathe_fire
   end
-
 
 end
