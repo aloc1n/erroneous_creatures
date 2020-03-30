@@ -2,6 +2,7 @@ gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/werewolf'
+require 'pry'
 
 class WerewolfTest < Minitest::Test
   def test_it_has_a_name
