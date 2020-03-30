@@ -4,6 +4,12 @@ require 'minitest/pride'
 require './lib/vampire'
 
 class VampireTest < Minitest::Test
+
+  def test_it_exists
+    vampire = Vampire.new("Dracula", "red")
+    assert_instance_of Vampire, vampire
+  end
+
   def test_it_has_a_name
     vampire = Vampire.new("Dracula", "red")
     assert_equal "Dracula", vampire.name
