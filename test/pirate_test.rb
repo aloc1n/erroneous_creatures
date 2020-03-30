@@ -2,6 +2,7 @@ gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/pirate'
+require 'pry'
 
 class PirateTest < Minitest::Test
   def test_has_name
