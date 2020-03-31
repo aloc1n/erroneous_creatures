@@ -3,7 +3,7 @@ class Hobbit
   attr_reader :name, :disposition
   attr_accessor :age, :playable, :tiredness
 
-  def initialize (name, disposition="homebody")
+  def initialize(name, disposition="homebody")
     @name = name
     @disposition = disposition
     @age = 0

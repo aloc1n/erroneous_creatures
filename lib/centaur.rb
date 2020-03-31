@@ -18,7 +18,7 @@ class Centaur
     @crankiness += 1
     if @crankiness < 3
        "Twang!!!"
-     else
+    else
       "NO!"
     end
   end

@@ -11,7 +11,7 @@ class Wizard
   def bearded?
     if @bearded == {bearded: true}
       true
-    elsif @beaded == {bearded: false}
+    elsif @bearded == {bearded: false}
       false
     end
   end
