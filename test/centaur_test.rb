@@ -2,6 +2,7 @@ gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/centaur'
+require 'pry'
 
 class CentaurTest < Minitest::Test
   def test_it_has_a_name
