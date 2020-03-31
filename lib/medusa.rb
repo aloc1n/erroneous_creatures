@@ -13,10 +13,6 @@ class Medusa
     @statues << x
   end
 
-  def statues
-    @statues
-  end
-
 end
 
 class Person
